@@ -48,40 +48,51 @@ export default function AboutPage() {
                 Hello! I'm passionate about creating amazing digital experiences 
                 and solving complex problems through innovative solutions. With a 
                 background in web development and design, I love bringing ideas 
-                to life.
+                to life. I have over 8 years of professional software development 
+                experience and am always looking to make the next big impact!
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open-source projects, or enjoying a good cup of 
-                coffee while reading about the latest trends in tech.
+                When I'm not coding, you can find me exploring new technologies or 
+                enjoying a good cup of coffee while reading about the latest trends 
+                in tech. I train in Brazilian Jiu Jitsu to stay active and I am also 
+                CPR and first aid certified, someone you will want around in an emergency!
               </p>
             </div>
 
             {/* Skills/Interests Grid */}
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-blue-900/50 to-blue-800/50 p-6 rounded-xl border border-blue-700/50">
-                <h3 className="text-lg font-semibold text-white mb-3">
-                  Skills
-                </h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Next.js & React</li>
-                  <li>• TypeScript</li>
-                  <li>• UI/UX Design</li>
-                  <li>• API Development</li>
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-900/50 to-purple-800/50 p-6 rounded-xl border border-purple-700/50">
-                <h3 className="text-lg font-semibold text-white mb-3">
-                  Interests
-                </h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Open Source</li>
-                  <li>• Web3 & Blockchain</li>
-                  <li>• Photography</li>
-                  <li>• Travel</li>
-                </ul>
-              </div>
+                <div className="bg-gradient-to-br from-blue-900/50 to-blue-800/50 p-6 rounded-xl border border-blue-700/50">
+                    <h3 className="text-lg font-semibold text-white mb-3">
+                    Technical Skills
+                    </h3>
+                    <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                    <li>Next.js & React</li>
+                    <li>TypeScript & JavaScript</li>
+                    <li>HTML5 & CSS</li>
+                    <li>Application Accessibility</li>
+                    <li>UI/UX Design</li>
+                    <li>API Development</li>
+                    <li>Python</li>
+                    <li>Golang</li>
+                    <li>C++</li>
+                    </ul>
+                </div>
+                <div className="bg-gradient-to-br from-purple-900/50 to-purple-800/50 p-6 rounded-xl border border-purple-700/50">
+                    <h3 className="text-lg font-semibold text-white mb-3">
+                    Interests
+                    </h3>
+                    <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                    <li>Open Source</li>
+                    <li>Web3 & Blockchain</li>
+                    <li>Security</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Healthcare</li>
+                    <li>Embedded Systems</li>
+                    <li>Photography</li>
+                    <li>Travel</li>
+                    <li>Martial Arts</li>
+                    </ul>
+                </div>
             </div>
 
             {/* Social Links */}
