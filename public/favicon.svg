@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Circle -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#E56B6F" stroke-width="5"/>
+  
+  <!-- Rectangle on the right -->
+  <rect x="85" y="25" width="15" height="50" fill="#E56B6F"/>
+  
+  <!-- KM Text -->
+  <text x="50" y="65" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#E56B6F" text-anchor="middle">KM</text>
+</svg>

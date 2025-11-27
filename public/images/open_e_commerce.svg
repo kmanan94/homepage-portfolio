@@ -1,0 +1,185 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#e8f4f8"/>
+  
+  <!-- Decorative lines and shapes with animations -->
+  <line x1="50" y1="80" x2="120" y2="80" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="x1" values="50;60;50" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="120;130;120" dur="3s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="680" y1="80" x2="750" y2="80" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="x1" values="680;670;680" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="750;740;750" dur="3.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <circle cx="90" cy="40" r="3" fill="#f59e0b">
+    <animate attributeName="cy" values="40;30;40" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="710" cy="240" r="3" fill="#f59e0b">
+    <animate attributeName="cx" values="710;720;710" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3;4;3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <path d="M 150 50 L 160 50 L 155 60 Z" fill="none" stroke="#94a3b8" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 155 55;15 155 55;0 155 55" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M 650 250 L 660 250 L 655 240 Z" fill="none" stroke="#94a3b8" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 655 245;-15 655 245;0 655 245" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Shopping bag icon (left) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="2s" repeatCount="indefinite"/>
+    <rect x="80" y="100" width="50" height="55" rx="3" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <path d="M 95 100 Q 95 85 105 85 Q 115 85 115 100" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <circle cx="95" cy="120" r="2" fill="#f59e0b"/>
+    <text x="95" y="180" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">PAYMENT</text>
+  </g>
+  
+  <!-- Percentage symbol -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 180 100;360 180 100" dur="8s" repeatCount="indefinite"/>
+    <text x="180" y="95" font-family="Arial, sans-serif" font-size="24" fill="#f59e0b" font-weight="bold">%</text>
+    <text x="180" y="115" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">SALE</text>
+  </g>
+  
+  <!-- Storefront icon -->
+  <g>
+    <animateTransform attributeName="transform" type="scale" values="1;1.05;1" additive="sum" dur="2.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0" additive="sum"/>
+    <rect x="240" y="85" width="70" height="50" rx="3" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <rect x="245" y="75" width="60" height="12" rx="2" fill="#f59e0b"/>
+    <path d="M 245 78 Q 250 72 255 78 M 255 78 Q 260 72 265 78 M 265 78 Q 270 72 275 78 M 275 78 Q 280 72 285 78 M 285 78 Q 290 72 295 78 M 295 78 Q 300 72 305 78" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <rect x="260" y="100" width="15" height="20" fill="#3b82f6" opacity="0.3"/>
+    <rect x="280" y="100" width="15" height="20" fill="#3b82f6" opacity="0.3"/>
+    <rect x="265" y="120" width="20" height="15" fill="#f59e0b" opacity="0.5"/>
+  </g>
+  
+  <!-- Shopping cart -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;5,0;0,0" dur="1.5s" repeatCount="indefinite"/>
+    <circle cx="335" cy="115" r="15" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <path d="M 325 105 L 345 105 L 343 120 L 327 120 Z" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <circle cx="331" cy="123" r="2" fill="#3b82f6"/>
+    <circle cx="339" cy="123" r="2" fill="#3b82f6"/>
+    <text x="335" y="150" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">PURCHASE</text>
+  </g>
+  
+  <!-- Main E-COMMERCE text -->
+  <text x="400" y="150" font-family="Arial, sans-serif" font-size="48" fill="#64748b" text-anchor="middle" font-weight="300" letter-spacing="2">
+    <tspan font-weight="400">SNEAK </tspan>E-COMMERCE
+  </text>
+  
+  <!-- Arrows -->
+  <g>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    <path d="M 200 165 L 220 165 M 215 160 L 220 165 L 215 170" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+  
+  <g>
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    <path d="M 580 165 L 600 165 M 580 165 L 585 160 M 580 165 L 585 170" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+  
+  <!-- Dollar sign (circular) -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 360 220;10 360 220;0 360 220;-10 360 220;0 360 220" dur="3s" repeatCount="indefinite"/>
+    <circle cx="360" cy="220" r="18" fill="none" stroke="#10b981" stroke-width="2.5"/>
+    <text x="360" y="230" font-family="Arial, sans-serif" font-size="24" fill="#10b981" text-anchor="middle" font-weight="bold">$</text>
+    <path d="M 345 210 L 375 230 M 345 230 L 375 210" stroke="#10b981" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  
+  <!-- Mobile phone -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0" dur="2.2s" repeatCount="indefinite"/>
+    <rect x="430" y="190" width="30" height="50" rx="3" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <circle cx="445" cy="233" r="2" fill="#3b82f6"/>
+    <line x1="437" y1="197" x2="453" y2="197" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="435" y="203" width="20" height="20" fill="#f59e0b" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Email icon -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,5;0,0" dur="2.8s" repeatCount="indefinite"/>
+    <rect x="510" y="200" width="35" height="25" rx="2" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <path d="M 510 200 L 527.5 215 L 545 200" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="527" y="245" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">EMAIL</text>
+  </g>
+  
+  <!-- Package/Box -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 607.5 212.5;5 607.5 212.5;0 607.5 212.5;-5 607.5 212.5;0 607.5 212.5" dur="4s" repeatCount="indefinite"/>
+    <rect x="590" y="195" width="35" height="35" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <line x1="590" y1="212" x2="625" y2="212" stroke="#3b82f6" stroke-width="2.5"/>
+    <line x1="607.5" y1="195" x2="607.5" y2="230" stroke="#3b82f6" stroke-width="2.5"/>
+    <path d="M 595 205 L 605 210 L 615 205" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <text x="607" y="245" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">PACKAGING</text>
+  </g>
+  
+  <!-- Delivery truck -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;10,0;0,0" dur="3s" repeatCount="indefinite"/>
+    <rect x="670" y="90" width="45" height="25" rx="2" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <rect x="695" y="95" width="15" height="15" fill="#f59e0b" opacity="0.3"/>
+    <circle cx="680" cy="118" r="5" fill="none" stroke="#3b82f6" stroke-width="2.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 680 118;360 680 118" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="705" cy="118" r="5" fill="none" stroke="#3b82f6" stroke-width="2.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 705 118;360 705 118" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 715 100 L 720 105 L 720 115 L 710 115" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <text x="690" y="140" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">DELIVERY</text>
+  </g>
+  
+  <!-- Location pin -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,5;0,0" dur="2s" repeatCount="indefinite"/>
+    <path d="M 720 40 Q 720 30 730 30 Q 740 30 740 40 Q 740 50 730 60 Q 720 50 720 40 Z" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <circle cx="730" cy="40" r="3" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Decorative wavy lines -->
+  <path d="M 340 30 Q 345 25 350 30 Q 355 35 360 30 Q 365 25 370 30 Q 375 35 380 30" fill="none" stroke="#94a3b8" stroke-width="2">
+    <animate attributeName="d" values="M 340 30 Q 345 25 350 30 Q 355 35 360 30 Q 365 25 370 30 Q 375 35 380 30;M 340 30 Q 345 35 350 30 Q 355 25 360 30 Q 365 35 370 30 Q 375 25 380 30;M 340 30 Q 345 25 350 30 Q 355 35 360 30 Q 365 25 370 30 Q 375 35 380 30" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M 420 260 Q 425 255 430 260 Q 435 265 440 260 Q 445 255 450 260" fill="none" stroke="#94a3b8" stroke-width="2">
+    <animate attributeName="d" values="M 420 260 Q 425 255 430 260 Q 435 265 440 260 Q 445 255 450 260;M 420 260 Q 425 265 430 260 Q 435 255 440 260 Q 445 265 450 260;M 420 260 Q 425 255 430 260 Q 435 265 440 260 Q 445 255 450 260" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Plus signs -->
+  <g transform="translate(120, 220)">
+    <animateTransform attributeName="transform" type="translate" values="120,220;120,215;120,220" additive="replace" dur="1.8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 0 0;90 0 0;0 0 0" additive="sum" dur="3s" repeatCount="indefinite"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(650, 180)">
+    <animateTransform attributeName="transform" type="translate" values="650,180;650,185;650,180" additive="replace" dur="2.2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 0 0;-90 0 0;0 0 0" additive="sum" dur="3s" repeatCount="indefinite"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+  
+  <!-- X marks -->
+  <g transform="translate(300, 200) rotate(45)">
+    <animateTransform attributeName="transform" type="translate" values="300,200;305,200;300,200" additive="replace" dur="2.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" values="45 0 0;135 0 0;45 0 0" additive="sum" dur="4s" repeatCount="indefinite"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(380, 70) rotate(45)">
+    <animateTransform attributeName="transform" type="translate" values="380,70;380,65;380,70" additive="replace" dur="2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" values="45 0 0;-45 0 0;45 0 0" additive="sum" dur="3.5s" repeatCount="indefinite"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,175 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1" stroke="#06b6d4" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+  
+  <!-- Circuit lines -->
+  <g stroke="#06b6d4" stroke-width="1.5" opacity="0.3" fill="none">
+    <path d="M 100,450 L 200,450 L 200,350">
+      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 700,450 L 600,450 L 600,350">
+      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 50,200 L 150,200">
+      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 650,180 L 750,180">
+      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Main Cloud with geometric low-poly style -->
+  <g id="mainCloud" transform="translate(400, 200)" filter="url(#glow)">
+    <!-- Cloud base shape -->
+    <polygon points="0,-60 40,-70 80,-50 90,-10 80,30 40,40 -40,40 -80,30 -90,-10 -80,-50 -40,-70" 
+             fill="url(#cloudGradient)" opacity="0.3"/>
+    
+    <!-- Inner geometric pattern -->
+    <polygon points="0,-40 30,-45 50,-30 50,0 30,20 0,25 -30,20 -50,0 -50,-30 -30,-45" 
+             fill="#06b6d4" opacity="0.4"/>
+    <polygon points="0,-20 20,-25 30,-10 30,10 20,20 0,22 -20,20 -30,10 -30,-10 -20,-25" 
+             fill="#3b82f6" opacity="0.6"/>
+    
+    <!-- Center hexagon -->
+    <polygon points="0,-15 13,-7.5 13,7.5 0,15 -13,7.5 -13,-7.5" 
+             fill="#06b6d4" opacity="0.8"/>
+    
+    <!-- Connecting lines -->
+    <line x1="0" y1="-40" x2="0" y2="-15" stroke="#06b6d4" stroke-width="2" opacity="0.6"/>
+    <line x1="30" y1="-45" x2="13" y2="-7.5" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-30" y1="-45" x2="-13" y2="-7.5" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+    <line x1="50" y1="0" x2="13" y2="0" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-50" y1="0" x2="-13" y2="0" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+  </g>
+  
+  <!-- Connection nodes -->
+  <g fill="#06b6d4" filter="url(#glow)">
+    <circle cx="200" cy="350" r="4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="350" r="4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="350" r="4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Connection lines to cloud -->
+  <g stroke="#06b6d4" stroke-width="2" opacity="0.3" fill="none">
+    <path d="M 200,350 L 360,240">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 400,350 L 400,240">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 600,350 L 440,240">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Terminal windows at bottom -->
+  <!-- Left terminal -->
+  <g id="leftTerminal" transform="translate(120, 360)">
+    <rect width="140" height="90" rx="4" fill="#0f172a" stroke="#06b6d4" stroke-width="1" opacity="0.8"/>
+    <rect width="140" height="18" rx="4" fill="#1e293b"/>
+    <circle cx="10" cy="9" r="3" fill="#ef4444" opacity="0.7"/>
+    <circle cx="22" cy="9" r="3" fill="#eab308" opacity="0.7"/>
+    <circle cx="34" cy="9" r="3" fill="#22c55e" opacity="0.7"/>
+    <text x="10" y="38" font-family="monospace" font-size="9" fill="#06b6d4">$ npm install</text>
+    <text x="10" y="52" font-family="monospace" font-size="9" fill="#64748b">@cloud/sdk</text>
+    <text x="10" y="66" font-family="monospace" font-size="9" fill="#22c55e">✓ installed</text>
+  </g>
+  
+  <!-- Center terminal -->
+  <g id="centerTerminal" transform="translate(320, 360)">
+    <rect width="160" height="90" rx="4" fill="#0f172a" stroke="#06b6d4" stroke-width="1" opacity="0.8"/>
+    <rect width="160" height="18" rx="4" fill="#1e293b"/>
+    <circle cx="10" cy="9" r="3" fill="#ef4444" opacity="0.7"/>
+    <circle cx="22" cy="9" r="3" fill="#eab308" opacity="0.7"/>
+    <circle cx="34" cy="9" r="3" fill="#22c55e" opacity="0.7"/>
+    <text x="10" y="38" font-family="monospace" font-size="9" fill="#06b6d4">GET /api/v1/data</text>
+    <text x="10" y="52" font-family="monospace" font-size="9" fill="#22c55e">200 OK</text>
+    <text x="10" y="66" font-family="monospace" font-size="9" fill="#64748b">{"status":"ok"}</text>
+  </g>
+  
+  <!-- Right terminal -->
+  <g id="rightTerminal" transform="translate(520, 360)">
+    <rect width="140" height="90" rx="4" fill="#0f172a" stroke="#06b6d4" stroke-width="1" opacity="0.8"/>
+    <rect width="140" height="18" rx="4" fill="#1e293b"/>
+    <circle cx="10" cy="9" r="3" fill="#ef4444" opacity="0.7"/>
+    <circle cx="22" cy="9" r="3" fill="#eab308" opacity="0.7"/>
+    <circle cx="34" cy="9" r="3" fill="#22c55e" opacity="0.7"/>
+    <text x="10" y="38" font-family="monospace" font-size="9" fill="#06b6d4">$ cloud deploy</text>
+    <text x="10" y="52" font-family="monospace" font-size="9" fill="#64748b">deploying...</text>
+    <text x="10" y="66" font-family="monospace" font-size="9" fill="#22c55e">✓ success</text>
+  </g>
+  
+  <!-- Data particles -->
+  <g opacity="0.6">
+    <circle cx="300" cy="280" r="2" fill="#06b6d4">
+      <animate attributeName="cy" values="280;260;280" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="290" r="2" fill="#3b82f6">
+      <animate attributeName="cy" values="290;270;290" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="300" r="2" fill="#06b6d4">
+      <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="285" r="2" fill="#3b82f6">
+      <animate attributeName="cy" values="285;265;285" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#f1f5f9" text-anchor="middle">
+    Developer Portal
+  </text>
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle" letter-spacing="3">
+    CLOUD • API • INFRASTRUCTURE
+  </text>
+</svg>
