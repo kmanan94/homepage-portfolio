@@ -12,7 +12,7 @@ export default function Projects() {
       },
       {
         id: 2,
-        title: "Sneak E-Commerce",
+        title: "Kicks Trading Co",
         description: "Trading and verification platform for collectible sneakers",
         technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
         link: "https://github.com/yourusername/project2",
